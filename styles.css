@@ -1,0 +1,30 @@
+.root {
+    -fx-background-color: #2b2b2b; /* Dark background color */
+}
+
+.label {
+    -fx-text-fill: white; /* White text color for labels */
+}
+
+.text-field {
+    -fx-prompt-text-fill: white; /* White prompt text color for text fields */
+    -fx-background-color: #333333; /* Dark background color for text fields */
+    -fx-text-fill: white; /* White text color for text fields */
+}
+
+.combo-box {
+    -fx-prompt-text-fill: black; /* White prompt text color for combo box */
+    -fx-background-color: #333333; /* Dark background color for combo box */
+    -fx-text-fill: black; /* White text color for combo box */
+}
+
+.button {
+    -fx-background-color: #ffcc00; /* Yellow background color for buttons */
+    -fx-text-fill: #2b2b2b; /* Dark text color for buttons */
+    -fx-font-size: 14px; /* Font size for buttons */
+}
+
+.choice-box {
+    -fx-text-fill: black;
+    -fx-background-color: #333333;
+}
