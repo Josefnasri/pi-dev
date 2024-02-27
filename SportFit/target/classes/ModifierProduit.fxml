@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifierProduit">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="679.0">
+         <children>
+            <TextField fx:id="idMod" layoutX="294.0" layoutY="94.0" prefHeight="26.0" prefWidth="110.0" promptText="Id produit" />
+            <TextField fx:id="nomNouv" layoutX="294.0" layoutY="142.0" prefHeight="26.0" prefWidth="110.0" promptText="Nouveau Nom" />
+            <TextField fx:id="prixNouv" layoutX="296.0" layoutY="187.0" prefHeight="26.0" prefWidth="110.0" promptText="Nouveau Prix" />
+            <TextField fx:id="categNouv" layoutX="292.0" layoutY="244.0" prefHeight="26.0" prefWidth="118.0" promptText="Nouvelle Categorie" />
+            <TextField fx:id="imageNouv" layoutX="294.0" layoutY="288.0" prefHeight="26.0" prefWidth="110.0" promptText="Nouvelle Image" />
+            <Button layoutX="445.0" layoutY="93.0" mnemonicParsing="false" onAction="#Modification" prefHeight="28.0" prefWidth="71.0" text="Modifier" />
+            <Label layoutX="250.0" layoutY="32.0" text="Modification Du Produit">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button layoutX="176.0" layoutY="335.0" mnemonicParsing="false" onAction="#ReturnToAjouter" text="Ajouter" />
+            <Button layoutX="509.0" layoutY="335.0" mnemonicParsing="false" onAction="#VersSupprimer" text="Supprimer" />
+            <Button layoutX="322.0" layoutY="335.0" mnemonicParsing="false" onAction="#VersAfficher" text="Afficher" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AjoutProduit">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="380.0">
+         <children>
+            <Text fill="#384046" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter  Produit" wrappingWidth="212.5367488861084">
+               <font>
+                  <Font name="Cambria" size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="8.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+         <opaqueInsets>
+            <Insets right="20.0" />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" wrappingWidth="89.1830825805664">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="8.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="nomFld" prefHeight="27.0" prefWidth="246.0" promptText="Nouveau nom">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="56.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Prix" wrappingWidth="89.1830825805664">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="8.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="prixFld" prefHeight="27.0" prefWidth="246.0" promptText="Nouveau prix" />
+         </children>
+         <VBox.margin>
+            <Insets top="17.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="83.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Categorie" wrappingWidth="89.1830825805664">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="8.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="categorieFld" prefHeight="27.0" prefWidth="246.0" promptText="categorie" />
+         </children>
+         <VBox.margin>
+            <Insets top="17.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="110.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ImageFile" wrappingWidth="89.1830825805664">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="8.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="imageFld" prefHeight="27.0" prefWidth="246.0" promptText="ImageFile.jpg" />
+         </children>
+         <VBox.margin>
+            <Insets top="17.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="62.0" prefWidth="380.0">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+         <children>
+            <JFXButton alignment="CENTER" onAction="#AjouterProduit" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: BBF246;" text="Enregistrer">
+               <HBox.margin>
+                  <Insets right="8.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Century" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="CENTER" layoutX="140.0" layoutY="18.0" onAction="#annuler" prefHeight="45.0" prefWidth="120.0" style="-fx-border-color: BBF246;" text="annuler">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</VBox>
