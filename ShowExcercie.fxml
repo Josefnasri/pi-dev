@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="485.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pi.sport.youssef_pi.controller.ShowExercice">
+   <children>
+      <ImageView fitHeight="485.0" fitWidth="581.0" pickOnBounds="true">
+         <image>
+            <Image url="@Mangez-bougez-cest-facile-730-730x480.jpg" />
+         </image>
+      </ImageView>
+   
+       <Label layoutX="1.0" layoutY="14.0" prefHeight="56.0" prefWidth="238.0" text="Exercice Details">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="25.0" />
+         </font>
+      </Label>
+
+      <ImageView fx:id="deleteButton" fitHeight="56.0" fitWidth="68.0" layoutX="482.0" layoutY="14.0" onMouseClicked="#onDelete" pickOnBounds="true">
+         <image>
+            <Image url="@delete.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="editButton" fitHeight="56.0" fitWidth="68.0" layoutX="488.0" layoutY="77.0" onMouseClicked="#onEdit" pickOnBounds="true">
+         <image>
+            <Image url="@5278663.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="editButton1" fitHeight="56.0" fitWidth="68.0" layoutX="488.0" layoutY="149.0" onMouseClicked="#retour" pickOnBounds="true">
+         <image>
+            <Image url="@back.png" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="35.0" layoutY="234.0" prefHeight="228.0" prefWidth="418.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="253.0" minWidth="10.0" prefWidth="126.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="383.0" minWidth="10.0" prefWidth="292.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="63.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+             <Label text="Nom">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+             <Label text="N°Fois" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+             <Label text="Type" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+             <Label text="Duree" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Description" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tNom" GridPane.columnIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tFois" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tDuree" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextArea fx:id="ADesc" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+            <ComboBox fx:id="CType" prefHeight="33.0" prefWidth="292.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <ImageView fx:id="editButton2" fitHeight="56.0" fitWidth="68.0" layoutX="488.0" layoutY="399.0" onMouseClicked="#save" pickOnBounds="true">
+         <image>
+            <Image url="@téléchargement%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+
+</AnchorPane>

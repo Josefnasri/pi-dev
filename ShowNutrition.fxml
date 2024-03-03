@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="485.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pi.sport.youssef_pi.controller.ShowNutrition">
+   <children>
+      <ImageView fitHeight="485.0" fitWidth="581.0" pickOnBounds="true">
+         <image>
+            <Image url="@Mangez-bougez-cest-facile-730-730x480.jpg" />
+         </image>
+      </ImageView>
+   
+       <Label layoutX="1.0" layoutY="14.0" prefHeight="56.0" prefWidth="292.0" text="Nutrition Details">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="25.0" />
+         </font>
+      </Label>
+
+      <ImageView fx:id="deleteButton" fitHeight="56.0" fitWidth="68.0" layoutX="482.0" layoutY="14.0" onMouseClicked="#onDelete" pickOnBounds="true">
+         <image>
+            <Image url="@delete.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="editButton" fitHeight="56.0" fitWidth="68.0" layoutX="488.0" layoutY="77.0" onMouseClicked="#onEdit" pickOnBounds="true">
+         <image>
+            <Image url="@5278663.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="editButton1" fitHeight="56.0" fitWidth="68.0" layoutX="488.0" layoutY="149.0" onMouseClicked="#retour" pickOnBounds="true">
+         <image>
+            <Image url="@back.png" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="35.0" layoutY="234.0" prefHeight="228.0" prefWidth="418.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="253.0" minWidth="10.0" prefWidth="126.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="383.0" minWidth="10.0" prefWidth="292.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="89.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="127.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="108.0" minHeight="10.0" prefHeight="108.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+             <Label text="Exercice">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+             <Label text="Meal" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Description" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="meal" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextArea fx:id="ADesc" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+            <ComboBox  fx:id="Cex" prefHeight="35.0" prefWidth="292.0" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <ImageView fx:id="editButton2" fitHeight="56.0" fitWidth="68.0" layoutX="482.0" layoutY="383.0" onMouseClicked="#save" pickOnBounds="true">
+         <image>
+            <Image url="@téléchargement%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+
+</AnchorPane>
