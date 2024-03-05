@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.PointLight?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="524.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.crud.controllers.homeController">
+   <children>
+      <Label layoutX="459.0" layoutY="39.0" text="Home" textFill="#1e1817">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="36.0" />
+         </font>
+      </Label>
+      <PointLight color="CHARTREUSE" layoutX="222.0" layoutY="54.0" lightOn="true" />
+      <Pane prefHeight="524.0" prefWidth="191.0" style="-fx-background-color: lightgreen;">
+         <children>
+            <Label layoutX="30.0" layoutY="197.0" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="234.0" onMouseClicked="#showEvents" text="Event" textFill="#1e1817">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="277.0" onMouseClicked="#showParticipant" text="Participant">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="72.0" layoutY="14.0" text="*">
+               <font>
+                  <Font name="Bell MT" size="96.0" />
+               </font>
+            </Label>
+            <Label layoutX="72.0" layoutY="376.0" text="*">
+               <font>
+                  <Font name="Bell MT" size="96.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pagination fx:id="pagination" layoutX="221.0" layoutY="178.0" prefHeight="334.0" prefWidth="605.0" />
+      <Label layoutX="306.0" layoutY="116.0" text="Join us for an unforgettable experience..." textFill="#1e1817" textOverrun="CLIP">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="555.0" layoutY="-5.0" prefHeight="116.0" prefWidth="38.0" text="*" textFill="#1e1817">
+         <font>
+            <Font name="Bauhaus 93" size="48.0" />
+         </font>
+      </Label>
+      <Button layoutX="209.0" layoutY="39.0" mnemonicParsing="false" onAction="#showCallender" prefHeight="43.0" prefWidth="105.0" style="-fx-background-color: lightgreen;" text="Calendrier">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.PointLight?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="524.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.crud.controllers.AjouterEventController">
+   <children>
+      <Label layoutX="243.0" layoutY="143.0" text="Event" textFill="#1e1817">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+         </font>
+      </Label>
+      <PointLight color="CHARTREUSE" layoutX="222.0" layoutY="54.0" lightOn="true" />
+      <Button layoutX="754.0" layoutY="436.0" mnemonicParsing="false" onAction="#submit" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: lightgreen;" text="Submit" />
+      <Pane prefHeight="524.0" prefWidth="191.0" style="-fx-background-color: lightgreen;">
+         <children>
+            <Label layoutX="32.0" layoutY="148.0" text="Home" textFill="#1e1817">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="192.0" text="Gym" textFill="#1e1817">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="234.0" onMouseClicked="#openEvent" text="Event" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="277.0" onMouseClicked="#showParticipant" text="Participant" textFill="#1e1817">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="323.0" text="Reclamation" textFill="#1e1817">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="23.0" text="*">
+               <font>
+                  <Font name="Bell MT" size="96.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="371.0" text="*">
+               <font>
+                  <Font name="Bell MT" size="96.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button layoutX="665.0" layoutY="436.0" mnemonicParsing="false" onAction="#cancel" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: lightgreen;" text="Cancel">
+         <font>
+            <Font name="Calibri" size="13.0" />
+         </font></Button>
+      <TextField fx:id="nomField" layoutX="241.0" layoutY="226.0" prefHeight="30.0" prefWidth="150.0" />
+      <DatePicker fx:id="datePicker" layoutX="418.0" layoutY="225.0" prefHeight="30.0" prefWidth="150.0" />
+      <Text layoutX="243.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name Of The Event">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font></Text>
+      <TextField fx:id="adresseField" layoutX="241.0" layoutY="311.0" prefHeight="30.0" prefWidth="150.0" />
+      <Text layoutX="243.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adress">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font></Text>
+      <Text fx:id="errorNom" fill="RED" layoutX="243.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="dateError" fill="RED" layoutX="417.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="AdresseError" fill="RED" layoutX="243.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text layoutX="418.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </Text>
+      <Label layoutX="369.0" layoutY="15.0" prefHeight="142.0" prefWidth="296.0" text="~~~~~">
+         <font>
+            <Font name="Arial Unicode MS" size="96.0" />
+         </font>
+      </Label>
+      <TextField fx:id="prixField" layoutX="418.0" layoutY="311.0" prefHeight="30.0" prefWidth="150.0" />
+      <Text layoutX="420.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="prixError" fill="RED" layoutX="419.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Button layoutX="239.0" layoutY="378.0" mnemonicParsing="false" onAction="#uploadImage" prefHeight="38.0" prefWidth="99.0" style="-fx-background-color: lightgreen;" text="Upload Image">
+         <font>
+            <Font name="Calibri" size="13.0" />
+         </font>
+      </Button>
+      <HBox layoutX="650.0" layoutY="319.0" spacing="5">
+         <Label fx:id="star1" onMouseClicked="#handleStarClick" style="-fx-font-family: 'Bauhaus 93'; -fx-font-size: 12;" text="☆" />
+         <Label fx:id="star2" onMouseClicked="#handleStarClick" style="-fx-font-family: 'Bauhaus 93'; -fx-font-size: 12;" text="☆" />
+         <Label fx:id="star3" onMouseClicked="#handleStarClick" style="-fx-font-family: 'Bauhaus 93'; -fx-font-size: 12;" text="☆" />
+         <Label fx:id="star4" onMouseClicked="#handleStarClick" style="-fx-font-family: 'Bauhaus 93'; -fx-font-size: 12;" text="☆" />
+         <Label fx:id="star5" onMouseClicked="#handleStarClick" style="-fx-font-family: 'Bauhaus 93'; -fx-font-size: 12;" text="☆" />
+      </HBox>
+      <Text fx:id="imageName" layoutX="346.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="imageUploadError" fill="RED" layoutX="239.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <TextField fx:id="localisationField" layoutX="603.0" layoutY="223.0" prefHeight="30.0" prefWidth="150.0" />
+      <Text layoutX="605.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Localisation">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="605.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating:">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="errorLocalisation" fill="RED" layoutX="603.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>

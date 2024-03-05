@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="485.0" prefWidth="581.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.crud.controllers.ShowNutrition">
+   <children>
+
+   
+       <Label layoutX="1.0" layoutY="14.0" prefHeight="56.0" prefWidth="292.0" text="Nutrition Details">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="25.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="35.0" layoutY="234.0" prefHeight="228.0" prefWidth="418.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="253.0" minWidth="10.0" prefWidth="126.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="383.0" minWidth="10.0" prefWidth="292.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="89.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="127.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="108.0" minHeight="10.0" prefHeight="108.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+             <Label text="Exercice">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+             <Label text="Meal" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Description" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="meal" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextArea fx:id="ADesc" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+            <ComboBox fx:id="Cex" prefHeight="35.0" prefWidth="292.0" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+
+</AnchorPane>
